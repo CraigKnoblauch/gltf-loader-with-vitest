@@ -10,9 +10,15 @@ describe('GLTFLoader', () => {
         })
     })
 
-    it('Should load texture to show path resolves correctly', () => {
+    it('Should load texture', () => {
         const loader = new TextureLoader()
         const texture = loader.load('./test-texture-1024.png')
         expect(texture).toBeInstanceOf(Texture)
+    })
+
+    it('Should not load texture that doesn\'t exist', () => {
+        const loader = new TextureLoader()
+        const texture = loader.load('./dne.png')
+        expect(texture).not.toBeInstanceOf(Texture)
     })
 })
