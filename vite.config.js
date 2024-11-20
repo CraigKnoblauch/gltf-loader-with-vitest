@@ -18,6 +18,7 @@ export default defineConfig({
   },
   assetsInclude: [],
   test: {
+    include: ['../test/**/*.test.js'],
     browser: {
       provider: 'playwright', // 'webdriverio' | 'playwright'
       enabled: true,
