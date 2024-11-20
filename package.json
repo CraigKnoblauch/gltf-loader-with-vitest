@@ -8,10 +8,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "test:browser": "vitest --workspace=vitest.workspace.js"
   },
   "devDependencies": {
+    "@vitest/browser": "^2.1.5",
     "jsdom": "^25.0.1",
+    "playwright": "^1.48.2",
     "vite": "^5.4.10",
     "vitest": "^2.1.4"
   },
